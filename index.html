@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Travel Blog</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <!-- navbar-expand-lg for responsiveness sizing 
+      bg-dark for color
+      navbar-dark so the text is light / text-primary 
+      
+      -->
+      <div class="container">
+        <a href="#" class="navbar-brand">Voyage Vibes</a>
+        <!-- navbar-brand for the logo/element -->
+        <button
+          class="navbar-toggler" 
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+        <!-- collapse so the navmenu below becomes a hamburger menu -->
+        <!-- data-bs-target takes the data from #navmenu id -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <!-- collapse navbar-collapse so when the screen becomes small it will be a dropdown menu -->
+          <ul class="navbar-nav ms-auto">
+            <!-- ms-auto to line it to the right end -->
+            <li class="nav-item">
+              <!-- nav-item for the items in navbar -->
+              <a href="#destinations" class="nav-link">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a href="#trips" class="nav-link">Type of Trips</a>
+            </li>
+            <li class="nav-item">
+              <a href="#question" class="nav-link">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section
+      class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+    >
+    <!-- text-sm-start till the size is sm the text will be aligned at the start and on mobile screen sm it will be centerd  -->
+    <!-- text-light for the color and p is for padding pt for padding-top -->
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between"> 
+          <!-- justify-content-between works like justify-content: space inbetween-->
+          <!-- d-sm-flex sm is a breakpoint and d-flex is for a flexbox -->
+          <div>
+            <h1>Travel<span class="text-warning"> India </span></h1>
+            <!-- warning = yellow -->
+            <p class="lead my-4">
+              <!-- lead is to change the text size m is for margin and y for y axixs so my-5 -->
+              Embark on a transformative journey through the vibrant tapestry of India,
+               where ancient traditions meet breathtaking landscapes, igniting your spirit of adventure and awakening 
+               the wanderlust within.
+            </p>
+            <!-- <button
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+            >
+              Start The Enrollment
+            </button> -->
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="img/logo.png"
+            alt=""
+          />
+          <!-- d-none removes the img and d-sm-block removes it only when the screen is sm -->
+          <!-- w-50 for weidth h-50 for height -->
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- Learn Sections -->
+    <section id="destinations" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="img/Manali.jpg" class="img-fluid" alt="" />
+            <!-- img-fuild so the img stays in the container and does not overflow -->
+          </div>
+          <div class="col-md p-5">
+            <h2>1. Manali</h2>
+            <p class="lead">
+              Whenever you are dealing with the hot scorching summer of India, the best place to visit is the hill station to relax. Manali is one of the best hill stations that you can visit to have a pleasant and awesome time with your loved ones.
+            </p>
+            <p>
+              The snow-covered mountains, the cool breeze, and the intense surrounded greenery make Manali the perfect destination.
+              Things to do: Adventurous sports, natures walk
+              How to reach: Airport- Bhuntar 50 Kms, Railway station- Chandigarh- 291 Km
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-arrow-up"></i>Go Up 
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="learn" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2>2. Shimla</h2>
+            <p class="lead">
+              Shimla is one of the well-known hill stations in India. The place is one of the favorite destinations of many tourists who are looking for that perfect place where they can explore the beauty of nature along with relaxing in the pleasant environment.
+            </p>
+            <p>You will fall in love with its beauty. It is the perfect combination of Indian beauty and British elegance.
+
+              Things to do: Visiting mall road, admiring nature’s beauty
+              How to reach: Airport- Chandigarh- 115 Km, Railway station- Kalka
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-arrow-up"></i> To Up
+            </a>
+          </div>
+          <div class="col-md">
+            <img src="img/Shimla.jpg" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="destinations" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="img/Ladakh.jpg" class="img-fluid" alt="" />
+            <!-- img-fuild so the img stays in the container and does not overflow -->
+          </div>
+          <div class="col-md p-5">
+            <h2>3. Ladakh</h2>
+            <p class="lead">
+              Without a doubt, Ladakh is one of the most popular destinations for the tourists. People from around the world visit the place to witness the mesmerizing beauty and picturesque locations of the place.
+            </p>
+            <p>
+              Considering the pleasant climatic conditions of Ladakh, you must visit the place during summers. The blue lakes and the blue sky is the dream destination for every biker.
+              Things to do: Biking, exploring the routes
+              How to reach: Airport- Leh Ladakh, Railway station- Jammu Tawi 700 Km
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-arrow-up"></i>Go Up 
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="learn" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2>4. Nainital</h2>
+            <p class="lead">
+              When you are mentioning the tourist places in India, the list won’t get completed without mentioning the name Nainital in it. The beauty of the place along with the soothing and pleasant environment attracts the tourists.  
+            </p>
+            <p>
+              t is one of the most popular destinations in India which is loved by most of the people. It can be easily visited on weekends.
+
+Things to do: Boating, bird-watching, admiring the beauty
+How to reach: Airport- Pantnagar 60 Km, Railway station- Kathgodam 20 Km
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-arrow-up"></i> To Up
+            </a>
+          </div>
+          <div class="col-md">
+            <img src="img/Nainital-Lake.jpg" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="trips" class="p-5 bg-primary">
+      <div class="container">
+        <h2 class="text-center text-white">Types of Trips</h2>
+        <p class="lead text-center text-white mb-5">
+          From the golden sands of deserts to the serene snow-capped peaks and lush green landscapes, explore the diverse tapestry of nature's wonders and experience the thrill of contrasting destinations on your unforgettable journeys.
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="img/mountain.png" alt="">
+                <h3 class="card-title mb-3 mt-3">Hill stations</h3>
+                <p class="card-text">
+                  Hill stations, nestled amidst majestic mountains, offer a refreshing escape with their cool climates, breathtaking views,
+                   and tranquil surroundings,unwind and rejuvenate amidst nature's embrace
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="img/desert.jpg" alt="">
+                <h3 class="card-title mb-3 mt-4">Desert Trips</h3>
+                <p class="card-text">
+                  Embark on an enchanting desert expedition, where endless golden sands, captivating dunes, and a surreal oasis allure you into a realm of serenity and ancient mysteries
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img
+                  src="img/forest.jfif"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
+                <h3 class="card-title mb-3">Forset Trips</h3>
+                <p class="card-text">
+                  Venture into the enchanting realm of lush forests, where towering trees, vibrant wildlife, and a symphony of natural wonders create an immersive sanctuary for the adventurous soul
+                </p>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+
+    <!-- Question Accordion -->
+    <section id="question" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush" id="questions">
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-one"
+              >
+              Q1: How do I plan my travel itinerary effectively?
+              </button>
+            </h2>
+            <div
+              id="question-one"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Research your destination, prioritize must-visit attractions, allocate sufficient time for each location, and leave room for flexibility and spontaneous exploration.
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-two"
+              >
+              Q2: What are some essential items to pack for a trip?
+              </button>
+            </h2>
+            <div
+              id="question-two"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Pack essentials like clothing suitable for the weather, toiletries, travel documents, first aid kit, electronics, adaptors, and a versatile backpack.
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-three"
+              >
+              Q3: How can I find affordable accommodation while traveling?
+              </button>
+            </h2>
+            <div
+              id="question-three"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Consider options like budget hotels, hostels, guesthouses, or even homestays. Utilize online travel platforms, compare prices, read reviews, and book in advance for better deals.
+              </div>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-four"
+              >
+              Q4.What are some tips for staying safe while traveling?
+              </button>
+            </h2>
+            <div
+              id="question-four"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Research about the safety conditions of your destination, stay alert, trust your instincts, avoid isolated areas at night, keep important documents secure, and be cautious with your belongings.
+              </div>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-five"
+              >
+              Q5: How can I make the most of my travel experience?
+              </button>
+            </h2>
+            <div
+              id="question-five"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Immerse yourself in the local culture, try regional cuisine, interact with locals, explore off-the-beaten-path locations, be open to new experiences, and create lasting memories through meaningful connections.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+    <!-- Contact & Map -->
+    <section class="p-5 ">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center mb-4">Contact Info</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Main Location:</span> Solapur
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Phone:</span> 1234567890
+              </li>
+              
+              <li class="list-group-item">
+                <span class="fw-bold">Enrollment Email:</span> 
+                chinmayparanjape007@gmail.com
+              </li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2021 CP9</p>
+
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel">Enrollment</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill out this form and we will get back to you</p>
+            <form>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">
+                  First Name:
+                </label>
+                <input type="text" class="form-control" id="first-name" />
+              </div>
+              <div class="mb-3">
+                <label for="last-name" class="col-form-label">Last Name:</label>
+                <input type="text" class="form-control" id="last-name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label">Phone:</label>
+                <input type="tel" class="form-control" id="phone" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+
+    <script>
+      mapboxgl.accessToken =
+        'pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw'
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-71.060982, 42.35725],
+        zoom: 18,
+      })
+    </script>
+  </body>
+</html>
